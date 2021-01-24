@@ -132,7 +132,7 @@ def model_backward(y, AL, parameters, forward_cache, nn_architecture, learn_rate
     
 def predict(X, parameters):
     
-    prediction = model_forward(X, parameters, nn_architecture)
+    prediction, _ = model_forward(X, parameters, nn_architecture)
     
     return prediction
 
